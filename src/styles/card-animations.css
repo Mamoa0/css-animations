@@ -1,0 +1,1074 @@
+/* Shared Properties */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  /* Fade Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeOutUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes fadeOutDown {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  @keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
+  
+  @keyframes fadeOutRight {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+  }
+  
+  /* hover states - apply the animations */
+  .animation-card:hover .fade-in {
+    animation-name: fadeIn ;
+  }
+  
+  .animation-card:hover .fade-out {
+    animation-name: fadeOut;
+  }
+  .animation-card:hover .fade-in-up {
+    animation-name: fadeInUp;
+  }
+  .animation-card:hover .fade-in-down {
+    animation-name: fadeInDown;
+  }
+  .animation-card:hover .fade-in-left {
+    animation-name: fadeInLeft;
+  }
+  .animation-card:hover .fade-in-right {
+    animation-name: fadeInRight;
+  }
+  .animation-card:hover .fade-out-up {
+    animation-name: fadeOutUp;
+  }
+  .animation-card:hover .fade-out-down {
+    animation-name: fadeOutDown;
+  }
+  .animation-card:hover .fade-out-left {
+    animation-name: fadeOutLeft;
+  }
+  .animation-card:hover .fade-out-right {
+    animation-name: fadeOutRight;
+  }
+  /* Slide Animations */
+  @keyframes slideInUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideOutUp {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  @keyframes slideOutDown {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+  @keyframes slideOutLeft {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  /* hover states - apply the animations */
+  .animation-card:hover .slide-in-up {
+    animation-name: slideInUp;
+  }
+  .animation-card:hover .slide-in-down {
+    animation-name: slideInDown;
+  }
+  .animation-card:hover .slide-in-left {
+    animation-name: slideInLeft;
+  }
+  .animation-card:hover .slide-in-right {
+    animation-name: slideInRight;
+  }
+  .animation-card:hover .slide-out-up {
+    animation-name: slideOutUp;
+  }
+  .animation-card:hover .slide-out-down {
+    animation-name: slideOutDown;
+  }
+  .animation-card:hover .slide-out-left {
+    animation-name: slideOutLeft;
+  }
+  .animation-card:hover .slide-out-right {
+    animation-name: slideOutRight;
+  }
+  /* Bounce Animation */
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes bounceOut {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    20% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  @keyframes bounceInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes bounceInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes bounceInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes bounceInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes bounceOutUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+  @keyframes bounceOutDown {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+  @keyframes bounceOutLeft {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-10px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes bounceOutRight {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(10px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+  /* hover states - apply the animations */
+  .animation-card:hover .bounce-out-right {
+    animation-name: bounceOutRight;
+  }
+  .animation-card:hover .bounce-out-left {
+    animation-name: bounceOutLeft;
+  }
+  .animation-card:hover .bounce-out-down {
+    animation-name: bounceOutDown;
+  }
+  .animation-card:hover .bounce-out-up {
+    animation-name: bounceOutUp;
+  }
+  .animation-card:hover .bounce-in-right {
+    animation-name: bounceInRight;
+  }
+  .animation-card:hover .bounce-in {
+    animation-name: bounceIn;
+  }
+  .animation-card:hover .bounce-out {
+    animation-name: bounceOut;
+  }
+  .animation-card:hover .bounce-in-up {
+    animation-name: bounceInUp;
+  }
+  .animation-card:hover .bounce-in-down {
+    animation-name: bounceInDown;
+  }
+  .animation-card:hover .bounce-in-left {
+    animation-name: bounceInLeft;
+  }
+  .animation-card:hover .bounce {
+    animation-name: bounce;
+  }
+  /* Zoom Animation */
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes zoomOut {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  @keyframes zoomInUp {
+    0% {
+      transform: scale(0) translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes zoomInDown {
+    0% {
+      transform: scale(0) translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes zoomInLeft {
+    0% {
+      transform: scale(0) translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes zoomInRight {
+    0% {
+      transform: scale(0) translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes zoomOutUp {
+    0% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0) translateY(-100%);
+      opacity: 0;
+    }
+  }
+  @keyframes zoomOutDown {
+    0% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0) translateY(100%);
+      opacity: 0;
+    }
+  }
+  @keyframes zoomOutLeft {
+    0% {
+      transform: scale(1) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0) translateX(-100%);
+      opacity: 0;
+    }
+  }
+  @keyframes zoomOutRight {
+    0% {
+      transform: scale(1) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0) translateX(100%);
+      opacity: 0;
+    }
+  }
+  /* hover states - apply the animations */
+  .animation-card:hover .zoom-in {
+    animation-name: zoomIn;
+  }
+  .animation-card:hover .zoom-out {
+    animation-name: zoomOut;
+  }
+  .animation-card:hover .zoom-in-up {
+    animation-name: zoomInUp;
+  }
+  .animation-card:hover .zoom-in-down {
+    animation-name: zoomInDown;
+  }
+  .animation-card:hover .zoom-in-left {
+    animation-name: zoomInLeft;
+  }
+  .animation-card:hover .zoom-in-right {
+    animation-name: zoomInRight;
+  }
+  .animation-card:hover .zoom-out-up {
+    animation-name: zoomOutUp;
+  }
+  .animation-card:hover .zoom-out-down {
+    animation-name: zoomOutDown;
+  }
+  .animation-card:hover .zoom-out-left {
+    animation-name: zoomOutLeft;
+  }
+  .animation-card:hover .zoom-out-right {
+    animation-name: zoomOutRight;
+  }
+  /* Flip Animations */
+  @keyframes flip {
+    0% {
+      transform: perspective(400px) rotateX(0);
+    }
+    100% {
+      transform: perspective(400px) rotateX(360deg);
+    }
+  }
+  
+  @keyframes flipInX {
+    0% {
+      transform: perspective(400px) rotateX(90deg);
+      opacity: 0;
+    }
+    100% {
+      transform: perspective(400px) rotateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes flipInY {
+    0% {
+      transform: perspective(400px) rotateY(90deg);
+      opacity: 0;
+    }
+    100% {
+      transform: perspective(400px) rotateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes flipOutX {
+    0% {
+      transform: perspective(400px) rotateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: perspective(400px) rotateX(90deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes flipOutY {
+    0% {
+      transform: perspective(400px) rotateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: perspective(400px) rotateY(90deg);
+      opacity: 0;
+    }
+  }
+  /* hover states - apply the animations */
+  .animation-card:hover .flip {
+    animation-name: flip;
+  }
+  .animation-card:hover .flip-in-x {
+    animation-name: flipInX;
+  }
+  .animation-card:hover .flip-in-y {
+    animation-name: flipInY;
+  }
+  .animation-card:hover .flip-out-x {
+    animation-name: flipOutX;
+  }
+  .animation-card:hover .flip-out-y {
+    animation-name: flipOutY;
+  }
+  
+  /* Rotate Animations */
+  @keyframes rotateIn {
+    from {
+      transform: rotate(-200deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rotateOut {
+    from {
+      transform: rotate(0);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(200deg);
+      opacity: 0;
+    }
+  }
+  @keyframes rotateInUpLeft {
+    from {
+      transform: rotate(-90deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rotateInUpRight {
+    from {
+      transform: rotate(90deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rotateInDownLeft {
+    from {
+      transform: rotate(-90deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rotateInDownRight {
+    from {
+      transform: rotate(90deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rotateOutUpLeft {
+    from {
+      transform: rotate(0);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(-90deg);
+      opacity: 0;
+    }
+  }
+  @keyframes rotateOutUpRight {
+    from {
+      transform: rotate(0);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(90deg);
+      opacity: 0;
+    }
+  }
+  @keyframes rotateOutDownLeft {
+    from {
+      transform: rotate(0);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(-90deg);
+      opacity: 0;
+    }
+  }
+  @keyframes rotateOutDownRight {
+    from {
+      transform: rotate(0);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(90deg);
+      opacity: 0;
+    }
+  }
+  /* hover states - apply the animations */
+  .animation-card:hover .rotate-in {
+    animation-name: rotateIn;
+  }
+  .animation-card:hover .rotate-out {
+    animation-name: rotateOut;
+  }
+  .animation-card:hover .rotate-in-up-left {
+    animation-name: rotateInUpLeft;
+  }
+  .animation-card:hover .rotate-in-up-right {
+    animation-name: rotateInUpRight;
+  }
+  .animation-card:hover .rotate-in-down-left {
+    animation-name: rotateInDownLeft;
+  }
+  .animation-card:hover .rotate-in-down-right {
+    animation-name: rotateInDownRight;
+  }
+  .animation-card:hover .rotate-out-up-right {
+    animation-name: rotateOutUpRight;
+  }
+  .animation-card:hover .rotate-out-up-left {
+    animation-name: rotateOutUpLeft;
+  }
+  .animation-card:hover .rotate-out-down-left {
+    animation-name: rotateOutDownLeft;
+  }
+  .animation-card:hover .rotate-out-down-right {
+    animation-name: rotateOutDownRight;
+  }
+  /* Roll Animations */
+  @keyframes rollIn {
+    from {
+      transform: translateX(-100%) rotate(-120deg);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rollOut {
+    from {
+      transform: translateX(0) rotate(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%) rotate(120deg);
+      opacity: 0;
+    }
+  }
+  /* hover states - apply the animations */
+  .animation-card:hover .roll-in {
+    animation-name: rollIn;
+  }
+  .animation-card:hover .roll-out {
+    animation-name: rollOut;
+  }
+  /* Light Speed Animations */
+  @keyframes lightSpeedIn {
+    from {
+      transform: translateX(-100%) skewX(-30deg);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) skewX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes lightSpeedOut {
+    from {
+      transform: translateX(0) skewX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%) skewX(30deg);
+      opacity: 0;
+    }
+  }
+  /* hover states - apply the animations */
+  .animation-card:hover .light-speed-in {
+    animation-name: lightSpeedIn;
+  }
+  .animation-card:hover .light-speed-out {
+    animation-name: lightSpeedOut;
+  }
+  /* Special Animations */
+  @keyframes hinge {
+    0% {
+      transform: rotate(0);
+      transform-origin: top left;
+    }
+    20% {
+      transform: rotate(80deg);
+      transform-origin: top left;
+    }
+    40% {
+      transform: rotate(60deg);
+      transform-origin: top left;
+    }
+    60% {
+      transform: rotate(80deg);
+      transform-origin: top left;
+    }
+    80% {
+      transform: rotate(60deg);
+      transform-origin: top left;
+    }
+    100% {
+      transform: translateY(700px);
+      opacity: 0;
+    }
+  }
+  @keyframes jackInTheBox {
+    from {
+      opacity: 0;
+      transform: scale(0.1) rotate(30deg);
+      transform-origin: center bottom;
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    70% {
+      transform: rotate(3deg);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+    }
+  }
+  @keyframes rubberBand {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale(1.25, 0.75);
+    }
+    40% {
+      transform: scale(0.75, 1.25);
+    }
+    50% {
+      transform: scale(1.15, 0.85);
+    }
+    65% {
+      transform: scale(0.95, 1.05);
+    }
+    75% {
+      transform: scale(1.05, 0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes wobble {
+    0% {
+      transform: translateX(0%);
+    }
+    15% {
+      transform: translateX(-25%) rotate(-5deg);
+    }
+    30% {
+      transform: translateX(20%) rotate(3deg);
+    }
+    45% {
+      transform: translateX(-15%) rotate(-3deg);
+    }
+    60% {
+      transform: translateX(10%) rotate(2deg);
+    }
+    75% {
+      transform: translateX(-5%) rotate(-1deg);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes jello {
+    from, 11.1%, to {
+      transform: none;
+    }
+    22.2% {
+      transform: skewX(-12.5deg) skewY(-12.5deg);
+    }
+    33.3% {
+      transform: skewX(6.25deg) skewY(6.25deg);
+    }
+    44.4% {
+      transform: skewX(-3.125deg) skewY(-3.125deg);
+    }
+    55.5% {
+      transform: skewX(1.5625deg) skewY(1.5625deg);
+    }
+    66.6% {
+      transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    }
+    77.7% {
+      transform: skewX(0.390625deg) skewY(0.390625deg);
+    }
+    88.8% {
+      transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    }
+  }
+  @keyframes heartBeat {
+    0% {
+      transform: scale(1);
+    }
+    14% {
+      transform: scale(1.3);
+    }
+    28% {
+      transform: scale(1);
+    }
+    42% {
+      transform: scale(1.3);
+    }
+    70% {
+      transform: scale(1);
+    }
+  }
+  /* hover states - apply the animations */
+  .animation-card:hover .hinge {
+    animation-name: hinge ;
+  }
+  .animation-card:hover .jack-in-the-box {
+    animation-name: jackInTheBox;
+  }
+  .animation-card:hover .rubber-band {
+    animation-name: rubberBand;
+  }
+  .animation-card:hover .wobble {
+    animation-name: wobble;
+  }
+  .animation-card:hover .jello {
+    animation-name: jello;
+  }
+  .animation-card:hover .heart-beat {
+    animation-name: heartBeat;
+  }
+  /* Atention Seekers Animations */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  @keyframes flash {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes swing {
+    20% {
+      transform: rotate(15deg);
+    }
+    40% {
+      transform: rotate(-10deg);
+    }
+    60% {
+      transform: rotate(5deg);
+    }
+    80% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes tada {
+    0% {
+      transform: scale(1);
+    }
+    10%, 20% {
+      transform: scale(0.9) rotate(-3deg);
+    }
+    30%, 50%, 70%, 90% {
+      transform: scale(1.1) rotate(3deg);
+    }
+    40%, 60%, 80% {
+      transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+  }
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  /* hover states - apply the animations */
+  .animation-card:hover .pulse {
+    animation-name: pulse;
+  }
+  .animation-card:hover .flash {
+    animation-name: flash;
+  }
+  .animation-card:hover .swing {
+    animation-name: swing;
+  }
+  .animation-card:hover .tada {
+    animation-name: tada;
+  }
+  .animation-card:hover .shake {
+    animation-name: shake;
+  }
+  .animation-card:hover .bounce {
+    animation-name: bounce;
+  }
+  
