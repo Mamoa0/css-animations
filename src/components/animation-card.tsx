@@ -21,9 +21,9 @@ const AnimationCard = ({ animation }: Props) => {
   };
 
   return (
-    <div data-aos="fade-up" className="relative overflow-hidden animation-card md:col-span-1 col-span-3 shadow-2xl border-[1px] p-4 border-secondary rounded-lg flex items-center justify-center flex-col">
+    <div data-aos="fade-up" className="relative overflow-hidden animation-card md:col-span-1 col-span-2 shadow-2xl border-[1px] p-4 border-secondary rounded-lg flex items-center justify-center flex-col">
       <div
-        className={`${animation.name} animated w-[200px] h-[200px] rounded-lg bg-secondary`}
+        className={`${animation.name} animated xl:w-[180px] lg:w-[140px] x w-[120px] xl:h-[180px] lg:h-[140px] x h-[120px] rounded-lg bg-secondary`}
       ></div>
      <div className="absolute top-2 right-2">
      <button

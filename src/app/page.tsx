@@ -28,8 +28,8 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 mb-10">
-        <div className="flex items-center justify-between col-span-3">
+      <div className="grid grid-cols-4 gap-4 mb-10">
+        <div className="flex items-center justify-between col-span-4">
           <h2 data-aos="fade-right" className="text-2xl font-bold mb-5">
             Card Animations
           </h2>
@@ -55,8 +55,8 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="grid grid-cols-3 gap-4 mb-10">
-        <div className="flex items-center justify-between col-span-3">
+      <div className="grid grid-cols-4 gap-4 mb-10">
+        <div className="flex items-center justify-between col-span-4">
           <h2 data-aos="fade-right" className="text-2xl font-bold mb-5">
             Button Animations
           </h2>
@@ -77,7 +77,7 @@ export default function Home() {
             </svg>
           </Link>
         </div>
-        {getRandomElements(Array.from(Array(buttons.length).keys()), 9).map(
+        {getRandomElements(Array.from(Array(buttons.length).keys()), 8).map(
           (num) => {
             const button = buttons[num];
             return <Button key={num} index={num} button={button} />;

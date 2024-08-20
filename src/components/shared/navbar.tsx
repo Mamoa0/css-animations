@@ -3,9 +3,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="container py-4 flex items-center justify-between">
+    <nav className="container py-5 flex items-center justify-between">
       <Link data-aos="fade-right" href="/">
-      <h1 className="text-3xl font-bold">CSS Animations</h1>
+      <h1 className="sm:text-3xl text-2xl font-bold">CSS Animations</h1>
       </Link>
       <div  data-aos="fade-left" className="flex gap-4">
         <a href="https://www.linkedin.com/in/mahmouu/" target="_blank">
