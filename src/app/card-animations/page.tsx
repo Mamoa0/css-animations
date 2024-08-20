@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div className="container py-10">
       {Object.keys(animations).map((key) => (
-        <div className="grid gap-4 mt-8">
+        <div key={key} className="grid gap-4 mt-8">
           <h2 data-aos="fade-right" className="text-2xl font-bold col-span-3 ">
             {animations[key].title}
           </h2>
