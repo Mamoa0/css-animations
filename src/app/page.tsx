@@ -29,8 +29,8 @@ export default function Home() {
       </div>
 
       <div className="grid grid-cols-4 gap-4 mb-10">
-        <div className="flex items-center justify-between col-span-4">
-          <h2 data-aos="fade-right" className="text-2xl font-bold mb-5">
+        <div className="flex items-center justify-between col-span-4 mb-5">
+          <h2 data-aos="fade-right" className="text-2xl font-bold ">
             Card Animations
           </h2>
           <Link data-aos="fade-left" href="/card-animations">
@@ -56,8 +56,8 @@ export default function Home() {
       </div>
 
       <div className="grid grid-cols-4 gap-4 mb-10">
-        <div className="flex items-center justify-between col-span-4">
-          <h2 data-aos="fade-right" className="text-2xl font-bold mb-5">
+        <div className="flex items-center justify-between col-span-4 mb-5">
+          <h2 data-aos="fade-right" className="text-2xl font-bold">
             Button Animations
           </h2>
           <Link data-aos="fade-left" href="/button-animations">
