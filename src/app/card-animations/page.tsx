@@ -1,7 +1,7 @@
 import React from "react";
-import animations from "../../../constants";
 import AnimationCard from "@/components/animation-card";
 import "../../styles/card-animations.css";
+import animations from "@/constants/constants";
 const page = () => {
   return (
     <div className="container py-10">

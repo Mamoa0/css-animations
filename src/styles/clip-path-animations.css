@@ -1,0 +1,340 @@
+.section-1 {
+  width:100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  margin: 20px 0;
+}
+
+.section-1 .shape {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-1 .shape-1 {
+  background-color: var(--tertiary-color);
+  clip-path: polygon(0 0, 12% 0, 47% 100%, 0% 100%);
+}
+
+.section-1 .shape-2 {
+  background-color: steelblue;
+  clip-path: polygon(54% 0, 100% 0, 100% 100%, 60% 100%);
+}
+
+.section-1 .shape-3 {
+  background-color: tomato;
+  clip-path: polygon(12% 0, 83% 0, 76% 100%, 38% 100%);
+}
+
+.section-1:hover .shape {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.section-1 .shape:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.section-2 {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #00aaaa;
+  clip-path: circle(6.1% at 95% 30%);
+  transition: all 0.5s ease-in-out;
+}
+
+.section-2 .name {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.section-2 .name span {
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  background-color: var(--brown-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+}
+.section-2 .name h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-2:hover {
+  clip-path: circle(100% at 70% 43%);
+}
+
+.split {
+  display: block;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+  color: transparent;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.split::before,
+.split::after {
+  content: "Split";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) ;
+  color: var(--secondary-color);
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.split::before {
+  clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+}
+
+.split::after {
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+}
+
+.split:hover::before,
+.split:hover::after {
+  color: var(--tertiary-color);
+}
+.split:hover::before {
+  transform: translate(-48%, -2px);
+}
+.split:hover::after {
+  transform: translate(-52%, 2px);
+}
+
+.section-3 {
+  position: relative;
+  width: 100%;
+  background-color: var(--secondary-color);
+  height: 200px;
+  background-color: transparent;
+}
+.clip-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.clip-text:nth-child(1) {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+}
+.clip-text:nth-child(2) {
+  color: white;
+  background-color: var(--tertiary-color);
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+}
+
+.clip-text:nth-child(2):hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.clip-text:nth-child(1):hover ~ .clip-text {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.section-4 {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+.img-1 {
+  width: 100%;
+  height: 100%;
+  animation: rotateOrb 5s ease-in-out infinite;
+}
+
+@keyframes rotateOrb {
+  0% {
+    clip-path: circle(35% at 10% 16%);
+  }
+  25% {
+    clip-path: circle(40% at 90% 9%);
+  }
+  50% {
+    clip-path: circle(45% at 90% 90%);
+  }
+  75% {
+    clip-path: circle(55% at 10% 90%);
+  }
+  100% {
+    clip-path: circle(100% at 42% 68%);
+  }
+}
+.section-5 {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  );
+  background-color: var(--secondary-color);
+  transition: width 1s ease-in-out, clip-path 1s ease-in-out 0.5s;
+}
+
+.section-5:hover {
+  width: 100%;
+  clip-path: polygon(0 0, 59% 0, 100% 0, 100% 50%, 100% 100%, 57% 100%, 0 100%);
+}
+
+.box-wrap {
+  margin: 8px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  background: #222;
+}
+
+.box {
+  background: url("https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg")
+    no-repeat center center;
+  background-size: cover;
+  clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.17s linear;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width: 600px) {
+  .box,
+  .box-wrap {
+    width: 180px !important;
+    height: 180px !important;
+  }
+}
+.type-2 {
+  clip-path: polygon(50% 50%, 100% 0, 50% 50%, 0% 100%);
+}
+
+.type-3 {
+  clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+}
+
+.type-4 {
+  clip-path: polygon(
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%
+  );
+}
+
+.type-5 {
+  clip-path: circle(0% at 50% 50%);
+}
+
+.type-6 {
+  clip-path: inset(0 0 100% 0);
+}
+
+.type-7 {
+  clip-path: polygon(0 0, 50% 100%, 50% 100%, 100% 0, 100% 0, 50% 100%, 0 0);
+}
+
+.type-8 {
+  clip-path: inset(50% 50% 50% 50%);
+}
+
+.content {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-family: sans-serif;
+}
+
+.box-wrap:hover .box {
+  clip-path: circle(150% at 100% 100%);
+}
+
+.box-wrap:hover .type-2 {
+  clip-path: polygon(100% 100%, 100% 0, 0 0, 0% 100%);
+}
+
+.box-wrap:hover .type-3 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.box-wrap:hover .type-4 {
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+}
+
+.box-wrap:hover .type-5 {
+  clip-path: circle(80% at 50% 50%);
+}
+
+.box-wrap:hover .type-6 {
+  clip-path: inset(0 0 0 0);
+}
+
+.box-wrap:hover .type-7 {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 50% 0, 50% 100%, 50% 0);
+}
+
+.box-wrap:hover .type-8 {
+  clip-path: inset(0 0 0 0);
+}

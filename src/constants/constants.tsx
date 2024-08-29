@@ -2933,11 +2933,10 @@ export const buttons = [
   },
 ];
 
-export const homeCards = 
-   [
-    {
-      name: "fade-in",
-      cssCode: `
+export const homeCards = [
+  {
+    name: "fade-in",
+    cssCode: `
     @keyframes fadeIn {
         from {
           opacity: 0;
@@ -2952,11 +2951,11 @@ export const homeCards =
       }
       
       `,
-      title: "Fade In",
-    },
-    {
-      name: "bounce",
-      cssCode: `@keyframes bounce {
+    title: "Fade In",
+  },
+  {
+    name: "bounce",
+    cssCode: `@keyframes bounce {
                 0%, 20%, 50%, 80%, 100% {
                   transform: translateY(0);
                 }
@@ -2971,11 +2970,11 @@ export const homeCards =
               .bounce {
                 animation: bounce 2s infinite;
               }`,
-      title: "Bounce",
-    },
-    {
-      name: "slide-in-up",
-      cssCode: `
+    title: "Bounce",
+  },
+  {
+    name: "slide-in-up",
+    cssCode: `
           
               @keyframes slideInUp {
                 from {
@@ -2990,11 +2989,11 @@ export const homeCards =
                 .slide-in-up {
                 animation: slideInUp 1s ease-in-out forwards;
                 `,
-      title: "Slide In Up",
-    },
-    {
-      name: "zoom-in",
-      cssCode: `
+    title: "Slide In Up",
+  },
+  {
+    name: "zoom-in",
+    cssCode: `
         @keyframes zoomIn {
       0% {
         transform: scale(0);
@@ -3011,11 +3010,11 @@ export const homeCards =
       animation: zoomIn 1s ease-in-out;
     }
     `,
-      title: "Zoom In",
-    },
-    {
-      name: "flip",
-      cssCode: `
+    title: "Zoom In",
+  },
+  {
+    name: "flip",
+    cssCode: `
           @keyframes flip {
       0% {
         transform: perspective(400px) rotateX(0);
@@ -3030,11 +3029,11 @@ export const homeCards =
     }
     
     `,
-      title: "Flip",
-    },
-    {
-      name: "rotate-in",
-      cssCode: `
+    title: "Flip",
+  },
+  {
+    name: "rotate-in",
+    cssCode: `
       @keyframes rotateIn {
         from {
           transform: rotate(-200deg);
@@ -3049,11 +3048,11 @@ export const homeCards =
         animation: rotateIn 1s ease-in-out;
       }
       `,
-      title: "Rotate In",
-    },
-    {
-      name: "hinge",
-      cssCode: `
+    title: "Rotate In",
+  },
+  {
+    name: "hinge",
+    cssCode: `
       @keyframes hinge {
         0% {
           transform: rotate(0);
@@ -3084,11 +3083,11 @@ export const homeCards =
         animation: hinge 2s ease-in-out;
       }
       `,
-      title: "Hinge",
-    },
-    {
-      name: "pulse",
-      cssCode: `
+    title: "Hinge",
+  },
+  {
+    name: "pulse",
+    cssCode: `
       @keyframes pulse {
         0%, 100% {
           transform: scale(1);
@@ -3101,11 +3100,11 @@ export const homeCards =
         animation: pulse 1s ease-in-out infinite;
       }
       `,
-      title: "Pulse",
-    },
-    {
-      name: "roll-in",
-      cssCode: `
+    title: "Pulse",
+  },
+  {
+    name: "roll-in",
+    cssCode: `
       @keyframes rollIn {
         from {
           transform: translateX(-100%) rotate(-120deg);
@@ -3120,6 +3119,420 @@ export const homeCards =
         animation: rollIn 1s ease-in-out;
       }
       `,
-      title: "Roll In",
-    },
-  ]
+    title: "Roll In",
+  },
+];
+
+export const clipPaths = [
+  {
+    code: `
+    <div className="box-wrap ">
+<div className="box"></div>
+<div className="content">Click Me!</div>
+</div>
+////////////////////// css code ////////////////////////
+  margin: 8px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  background: #222;
+}
+
+.box {
+  background: url("https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg")
+    no-repeat center center;
+  background-size: cover;
+  clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.17s linear;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+ 
+.content {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-family: sans-serif;
+}
+
+.box-wrap:hover .box {
+  clip-path: circle(150% at 100% 100%);
+}
+
+`,
+className: "",
+},
+{
+  code: `<div className="box-wrap ">
+<div className="box type-2"></div>
+<div className="content">Click Me!</div>
+</div>  
+////////////////////// css code ////////////////////////
+margin: 8px;
+position: relative;
+width: 300px;
+height: 300px;
+  cursor: pointer;
+  background: #222;
+  }
+  
+  .box {
+    background: url("https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg")
+    no-repeat center center;
+    background-size: cover;
+  clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.17s linear;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  }
+  
+  .content {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-family: sans-serif;
+  }
+  
+
+    
+    .type-2 {
+     clip-path: polygon(50% 50%, 100% 0, 50% 50%, 0% 100%);
+    }
+    
+    `,
+    className: "type-2",
+  },
+  {
+    code: `<div className="box-wrap ">
+    <div className="box type-3"></div>  
+<div className="content">Click Me!</div>
+</div>  
+////////////////////// css code ////////////////////////
+margin: 8px;
+position: relative;
+width: 300px;
+height: 300px;
+cursor: pointer;
+background: #222;
+}
+
+.box {
+  background: url("https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg")
+  no-repeat center center;
+  background-size: cover;
+  clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.17s linear;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-family: sans-serif;
+  }
+  
+
+    
+    .type-3 {
+      clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+    }
+    
+    
+    
+`,
+    className: "type-3",
+  },
+  {
+    code: `<div className="box-wrap ">
+    <div className="box type-4"></div>
+    <div className="content">Click Me!</div>
+    </div>  
+    ////////////////////// css code ////////////////////////
+    margin: 8px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    background: #222;
+}
+
+.box {
+  background: url("https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg")
+  no-repeat center center;
+  background-size: cover;
+  clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.17s linear;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  }
+  
+  .content {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-family: sans-serif;
+    }
+    
+    .box-wrap:hover .box {
+      clip-path: circle(150% at 100% 100%);
+      }
+      .type-3 {
+        clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+        }
+      
+      
+        
+        
+`,
+className: "type-4",
+},
+{
+  code: `<div className="box-wrap ">
+<div className="box type-5"></div>        
+<div className="content">Click Me!</div>
+</div>  
+////////////////////// css code ////////////////////////
+margin: 8px;
+position: relative;
+width: 300px;
+height: 300px;
+cursor: pointer;
+background: #222;
+}
+
+.box {
+  background: url("https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg")
+  no-repeat center center;
+  background-size: cover;
+  clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.17s linear;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  }
+  
+  .content {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-family: sans-serif;
+  }
+  .type-4 {
+    clip-path: polygon(
+  50% 50%,
+  50% 50%,
+  50% 50%,
+  50% 50%,
+  50% 50%,
+  50% 50%,
+  50% 50%,
+  50% 50%,
+  50% 50%,
+  50% 50%,
+  50% 50%,
+  50% 50%
+  );
+  
+
+
+
+
+`,
+    className: "type-5",
+  },
+  {
+    code: `<div className="box-wrap ">
+<div className="box type-6"></div>
+<div className="content">Click Me!</div>
+</div>  
+////////////////////// css code ////////////////////////
+  margin: 8px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  background: #222;
+}
+
+.box {
+  background: url("https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg")
+    no-repeat center center;
+  background-size: cover;
+  clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.17s linear;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-family: sans-serif;
+}
+
+.box-wrap:hover .box {
+  clip-path: circle(150% at 100% 100%);
+}
+
+.type-5 {
+  clip-path: circle(0% at 50% 50%);
+}
+
+
+
+`,
+    className: "type-6",
+  },
+  {
+    code: `<div className="box-wrap ">
+<div className="box type-7"></div>
+<div className="content">Click Me!</div>
+</div>  
+////////////////////// css code ////////////////////////
+  margin: 8px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  background: #222;
+}
+
+.box {
+  background: url("https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg")
+    no-repeat center center;
+  background-size: cover;
+  clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.17s linear;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-family: sans-serif;
+}
+
+.box-wrap:hover .box {
+  clip-path: circle(150% at 100% 100%);
+}
+
+.type-6 {
+  clip-path: inset(0 0 100% 0);
+}
+
+
+
+`,
+    className: "type-7",
+  },
+  {
+    code: `<div className="box-wrap ">
+<div className="box type-8"></div>
+<div className="content">Click Me!</div>
+</div>  
+////////////////////// css code ////////////////////////
+  margin: 8px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  background: #222;
+}
+
+.box {
+  background: url("https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg")
+    no-repeat center center;
+  background-size: cover;
+  clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.17s linear;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-family: sans-serif;
+}
+
+.box-wrap:hover .box {
+  clip-path: circle(150% at 100% 100%);
+}
+.type-7 {
+  clip-path: polygon(0 0, 50% 100%, 50% 100%, 100% 0, 100% 0, 50% 100%, 0 0);
+}
+
+`,
+    className: "type-8",
+  },
+];

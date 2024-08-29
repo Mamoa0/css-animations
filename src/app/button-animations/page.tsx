@@ -1,7 +1,7 @@
 import React from "react";
-import { buttons } from "../../../constants";
 import Button from "@/components/button";
 import "../../styles/button-animations.css";
+import { buttons } from "@/constants/constants";
 const page = () => {
   return (
     <div className="container py-10">
